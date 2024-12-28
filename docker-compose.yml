@@ -45,7 +45,7 @@ services:
   worker:
     build:
       context: ./worker
-    image: 127.0.0.1:5000/result
+    image: 127.0.0.1:5000/worker
     depends_on:
       redis:
         condition: service_healthy 
